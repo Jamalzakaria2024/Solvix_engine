@@ -1,3 +1,11 @@
+// -----------------------------------------------------
+// Mini Project: 4
+// Question 1 : Search formulas by name using keyword input.
+// Question 2 : Dynamically display inputs and equations for selected formulas.
+// Question 3 : Evaluate user inputs and show result using FormulaEvaluator.
+// Written by: Wesam Al-Omari (ID: 2023801020)
+// -----------------------------------------------------
+
 package view;
 
 import model.Formula; // import an object that contain a details for each formula
