@@ -5,33 +5,33 @@
 // Written by: Hashem Ehab Alrefai  (ID: 2023904130)
 // -----------------------------------------------------
 
-package view; // This class belongs to the 'view' package (UI layer)
+package view; 
 
 import net.objecthunter.exp4j.Expression; // Expression class from exp4j to evaluate math expressions
 import net.objecthunter.exp4j.ExpressionBuilder; // Builds the math expression from a string
 import net.objecthunter.exp4j.function.Function; // Used to define custom math functions
 
-import javax.swing.*; // Swing components like JFrame, JTextField, JButton, etc.
-import java.awt.*; // Layout managers and UI positioning tools
+import javax.swing.*; // swing components like JFrame, JTextField, JButton, etc.
+import java.awt.*; // layout managers and UI positioning tools
 
-public class ScientificCalculatorPage extends JFrame { // GUI window class
+public class ScientificCalculatorPage extends JFrame { 
     public ScientificCalculatorPage() {
         setTitle("Scientific Calculator"); // Set window title
         setSize(400, 580); // Set window size (width x height)
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Exit the application on close
         setLocationRelativeTo(null); // Center the window on the screen
 
-        JTextField inputField = new JTextField(); // Input field for typing expressions
-        inputField.setFont(new Font("Arial", Font.PLAIN, 20)); // Set font for input
+        JTextField inputField = new JTextField(); // input field for typing expressions
+        inputField.setFont(new Font("Arial", Font.PLAIN, 20)); // set font for input
 
-        JTextField resultField = new JTextField("Result:"); // Output field to show result
-        resultField.setFont(new Font("Arial", Font.BOLD, 18)); // Set font for result
+        JTextField resultField = new JTextField("Result:"); // output field to show result
+        resultField.setFont(new Font("Arial", Font.BOLD, 18)); // set font for result
         resultField.setEditable(false); // Make result field read-only
         resultField.setHorizontalAlignment(JTextField.CENTER); // Center-align result text
 
         JPanel buttonPanel = new JPanel(new GridLayout(7, 4, 5, 5)); // Panel with grid layout for buttons
 
-        // Define all calculator buttons
+        // define all calculator buttons
         String[] buttons = {
             "7", "8", "9", "/",
             "4", "5", "6", "*",
@@ -41,9 +41,9 @@ public class ScientificCalculatorPage extends JFrame { // GUI window class
             "sin", "cos", "π"
         };
 
-        // Create each button and define its behavior
+        // create each button and define its behavior
         for (String label : buttons) {
-            JButton btn = new JButton(label); // Create a button with the current label
+            JButton btn = new JButton(label); // create a button with the current label
             btn.setFont(new Font("Arial", Font.PLAIN, 16)); // Set font
 
             btn.addActionListener(e -> { // What happens when a button is clicked
