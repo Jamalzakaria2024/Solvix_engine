@@ -7,7 +7,7 @@
 
 // -----------------------------------------------------
 
-package app; //  this class is part of the 'app' package
+package app; 
 import view.WelcomePage; // import the WelcomePage class from the 'view' package
 
 public class Main { //starting point of the program.

@@ -129,18 +129,7 @@
     "description": "Calculates speed as distance over time.",
     "example": "d = 100, t = 10 → Result: 10"
   },
-  {
-    "id": "quadratic_formula",
-    "name": "Quadratic Formula",
-    "parameters": ["a", "b", "c"],
-    "constants": null,
-    "formula": "(-b + sqrt(b * b - 4 * a * c)) / (2 * a)",
-    "equation": "x = (-b ± √(b² - 4ac)) / 2a",
-    "unit": "",
-    "category": "Mathematics",
-    "description": "Solves quadratic equations of the form ax² + bx + c = 0.",
-    "example": "a = 1, b = -3, c = 2 → Result: 2 or 1"
-  },
+  
   {
     "id": "volume_sphere",
     "name": "Volume of a Sphere",
@@ -507,18 +496,7 @@
     "example": "watt_incandescent=60, watt_led=9, hours=5, rate_per_kwh=0.15 → Result: 13.97"
   },
   
-  {
-    "id": "quadratic_formula",
-    "name": "Quadratic Formula",
-    "parameters": ["a", "b", "c"],
-    "constants": null,
-    "formula": "(-b + sqrt(b * b - 4 * a * c)) / (2 * a)",
-    "equation": "x = [-b ± √(b²-4ac)] / 2a",
-    "unit": "",
-    "category": "Mathematics",
-    "description": "Solves quadratic equations ax² + bx + c = 0",
-    "example": "a=1, b=-3, c=2 → Result: 2 or 1"
-  },
+  
   {
     "id": "distance_two_points",
     "name": "Distance Between Two Points",
@@ -1131,4 +1109,14 @@
     "description": "Calculates surface area of spherical segment",
     "example": "h=2, R=5, r=3 → Result: 119.38"
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ]

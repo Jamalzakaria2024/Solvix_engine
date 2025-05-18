@@ -9,14 +9,14 @@
 
 package view; 
 
-import javax.swing.*; // Import all Swing components (JLabel, JButton, etc.)
-import java.awt.*;    // Import AWT layout and design tools
+import javax.swing.*; 
+import java.awt.*;    
 
 public class WelcomePage extends JFrame { // GUI window class that extends JFrame
     public WelcomePage() { // Constructor: runs when this page is opened
-        setTitle("Slovix Engine"); // Set the window title
-        setSize(500, 400); // Set width and height of the window
-        setDefaultCloseOperation(EXIT_ON_CLOSE); // Exit the app when window is closed
+        setTitle("Slovix Engine"); 
+        setSize(500, 400); 
+        setDefaultCloseOperation(EXIT_ON_CLOSE); 
         setLocationRelativeTo(null); // Center the window on screen
 
         JPanel panel = new JPanel(); // Main container panel
@@ -45,20 +45,21 @@ public class WelcomePage extends JFrame { // GUI window class that extends JFram
             new ScientificCalculatorPage(); // Open ScientificCalculatorPage
         });
 
-        panel.add(titleLabel); // Add title
+        panel.add(titleLabel); // add title
         panel.add(Box.createRigidArea(new Dimension(0, 10))); // (10 pixels vertical space) 
-        panel.add(descLabel); // Add description
+        panel.add(descLabel); // add description
         panel.add(Box.createRigidArea(new Dimension(0, 30))); // (30 pixels vertical space) 
-        panel.add(generalBtn); // Add general calculator button
+        panel.add(generalBtn); // add general calculator button
         panel.add(Box.createRigidArea(new Dimension(0, 15))); //  (15 pixels vertical space) 
-        panel.add(sciBtn); // Add scientific calculator button
+        panel.add(sciBtn); // add scientific calculator button
         panel.add(Box.createRigidArea(new Dimension(0, 30))); //  (30 pixels vertical space) 
 
         JLabel name1 = new JLabel("Jamal Mwaffak Zakaria", JLabel.CENTER); 
         JLabel name2 = new JLabel("Wesam Sharaf Al-Deen Al-Omari", JLabel.CENTER); 
         JLabel name3 = new JLabel("Hashem Ehab Alrefai", JLabel.CENTER); 
-
-        // Loop through all name labels: set alignment, font, and add them to the panel
+        
+        // instaed of 9 lines make it 3 lines only using for each(:
+        // loop through all name labels: set alignment, font, and add them to the panel
         for (JLabel name : new JLabel[]{name1, name2, name3}) {
             name.setAlignmentX(Component.CENTER_ALIGNMENT);
             name.setFont(new Font("Arial", Font.PLAIN, 12));
